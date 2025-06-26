@@ -1,103 +1,152 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <style>
-    .dropdown-menu .dropdown-item:hover {
-      background-color: blue;
-      color: white;
-      border-radius: 8px;
-    }
-    .nav-link:hover {
-      background-color: blue;
-      color: white;
-      border-radius: 4px;
-    }
-  </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        .dropdown-menu .dropdown-item:hover {
+            background-color: blue;
+            color: white;
+            border-radius: 8px;
+        }
+
+        .nav-link:hover {
+            background-color: blue;
+            color: white;
+            border-radius: 4px;
+        }
+    </style>
 </head>
+
 <body>
-  <nav class="navbar navbar-expand-md navbar-light bg-dark">
-    <div class="container-fluid">
-      <button class="btn navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#navbarContent">
-        <i class="navbar-toggler-icon"></i>
-      </button>
-      <div class="navbar-collapse collapse" id="navbarContent">
-        <ul class="navbar-nav me-3">
-          <li class="nav-item">
-            <a class="nav-link text-light text-uppercase font-weight-bold" href="#">
-              Home
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light text-uppercase font-weight-bold" href="#">
-              Skills
-            </a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link text-light text-uppercase font-weight-bold  dropdown-toggle" data-bs-toggle="dropdown"
-              href="#">
-              Projects
-            </a>
-            <ul class="dropdown-menu dropdown-menu-dark">
-              <li class="dropdown-item">
-                <a class="dropdown-link text-uppercase text-light" href="#">
-                  Project 1
-                </a>
-              </li>
-              <li class="dropdown-item">
-                <a class="dropdown-link text-uppercase text-light" href="#">
-                  Project 2
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light text-uppercase font-weight-bold" href="#">
-              Teams
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light text-uppercase font-weight-bold" href="#">
-              Contacts
-            </a>
-          </li>
-        </ul>
-        <form class="form-inline ms-auto">
-          <div class="input-group">
-            <input type="text" placeholder="Search..." class="form-control">
-            <div class="input-group-append">
-              <button class="btn btn-outline-light">
-                <i class="bi bi-search"></i>
-              </button>
+    <nav class="navbar navbar-expand-md navbar-light bg-dark">
+        <div class="container-fluid">
+            <button class="btn navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <i class="navbar-toggler-icon"></i>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarContent">
+                <ul class="navbar-nav me-3">
+                    <li class="nav-item">
+                        <a class="nav-link text-light text-uppercase font-weight-bold" href="#">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light text-uppercase font-weight-bold" href="#">
+                            Skills
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-light text-uppercase font-weight-bold  dropdown-toggle"
+                            data-bs-toggle="dropdown" href="#">
+                            Projects
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li class="dropdown-item">
+                                <a class="dropdown-link text-uppercase text-light" href="#">
+                                    Project 1
+                                </a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="dropdown-link text-uppercase text-light" href="#">
+                                    Project 2
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light text-uppercase font-weight-bold" href="#">
+                            Teams
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light text-uppercase font-weight-bold" href="#">
+                            Contacts
+                        </a>
+                    </li>
+                </ul>
+                <form class="form-inline ms-auto">
+                    <div class="input-group">
+                        <input type="text" placeholder="Search..." class="form-control">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-light">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
             </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </nav>
-  <section>
-    <div class="container-fluid">
-      <div class="row bg-info justify-content-center align-items-center" style="height: 100vh;">
-        <div class="col-sm-10 text-center">
-          <h1 class="display-2 text-capitalize"><span>pure bootstrap
-            <span class="text-while font-weight-bold">website</span>
-          </span></h1>
-          <h2 class="font-weight-light font-italic text-light">lorem, ipsum dolor sit amet consectetur 
-            adipisicing elit...
-          </h2>
-          <a class="btn btn-warning btn-lg px-3 m-3" href="#">Press Here</a>
-          <a class="btn btn-warning btn-lg px-4 m-3" href="#">Press Here</a>
         </div>
-      </div>
+    </nav>
+    <section>
+        <div class="container-fluid">
+            <div class="row bg-info justify-content-center align-items-center" style="height: 100vh;">
+                <div class="col-sm-10 text-center">
+                    <h1 class="display-2 text-capitalize"><span>pure bootstrap
+                            <span class="text-while font-weight-bold">website</span>
+                        </span></h1>
+                    <h2 class="font-weight-light font-italic text-light">lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit...
+                    </h2>
+                    <a class="btn btn-warning btn-lg px-3 m-3" href="#">Press Here</a>
+                    <a class="btn btn-warning btn-lg px-4 m-3" href="#">Press Here</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills section started -->
+    <div class="bg-light p-5">
+        <div class="container-fluid">
+            <!-- title -->
+            <div class="row">
+                <div class="col text-center mb-3">
+                    <h1 class="text-warning display-2">
+                        Skills
+                    </h1>
+                    <p class="lead">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis facere exercitationem
+                        molestiae explicabo placeat repellat totam incidunt, fuga molestias enim est in quisquam!
+                        Voluptatem rerum fuga nihil doloribus! Minima, ipsum?
+                    </p>
+                </div>
+            </div>
+            <!-- End of title -->
+            <div class="row text-center">
+                <div class="col-lg-4">
+                    <i class="bi bi-pc-display-horizontal text-warning" style="font-size: 6rem;"></i>
+                    <h1 class="text-secondary">Development</h1>
+                    <p class="text-muted my-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
+                        eligendi possimus voluptatem omnis quos, necessitatibus, accusamus hic sapiente quo voluptates
+                        quaerat molestiae similique quas quisquam expedita. Ullam facilis eaque non.</p>
+                    <a href="#" class="btn btn-outline-warning">Learn More</a>
+                </div>
+                <div class="col-lg-4">
+                    <i class="bi bi-pencil text-warning" style="font-size: 6rem;"></i>
+                    <h1 class="text-secondary">Design</h1>
+                    <p class="text-muted my-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
+                        eligendi possimus voluptatem omnis quos, necessitatibus, accusamus hic sapiente quo voluptates
+                        quaerat molestiae similique quas quisquam expedita. Ullam facilis eaque non.</p>
+                    <a href="#" class="btn btn-outline-warning">Learn More</a>
+                </div>
+                <div class="col-lg-4">
+                    <i class="bi bi-cpu-fill text-warning" style="font-size: 6rem;"></i>
+                    <h1 class="text-secondary">Creativity</h1>
+                    <p class="text-muted my-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
+                        eligendi possimus voluptatem omnis quos, necessitatibus, accusamus hic sapiente quo voluptates
+                        quaerat molestiae similique quas quisquam expedita. Ullam facilis eaque non.</p>
+                    <a href="#" class="btn btn-outline-warning">Learn More</a>
+                </div>
+            </div>
+        </div>
     </div>
-  </section>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-    crossorigin="anonymous"></script>
+    <!-- Skills section end -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
 </body>
 </html>
